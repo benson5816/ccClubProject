@@ -1,0 +1,94 @@
+<body style="background-color:#bdedf7;">
+  <div class='container'>  
+      <h1>ccClub 讀書會專題: 資產配置讓你更快達成財務自由</h1>  
+      <p>This portfolio backtesting tool allows you to construct one or more portfolios based on the selected mutual funds, ETFs, and stocks. You can analyze and backtest portfolio returns, risk characteristics, style exposures, and drawdowns. The results cover both returns and fund fundamentals based portfolio style analysis along with risk and return decomposition by each portfolio asset. You can compare up to three different portfolios against the selected benchmark, and you can also specify any periodic contribution or withdrawal cashflows and the preferred portfolio rebalancing strategy.</p>
+      <p>The related asset class level portfolio modeling tool allows you to analyze and compare asset class level portfolios with a longer time horizon starting from 1972.</p>
+    <div class='wrapper'>
+      <div>
+        <p>*巴菲特退休策略(Warren Buffett Retirement Plan):</p>
+      <table border="1" class="inlineTable">
+        <tr>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Weight </th>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Underlying Asset </th>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>90%</td>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>SPY</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>10%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>TLT</td>
+        </tr>
+      </table>
+      </div>
+      
+      <div>
+        <p>*永續投資策略(Permanent Portfolio):</p>
+      <table border="1" class="inlineTable">
+        <tr>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Weight </th>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Underlying Asset </th>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>25%</td>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>VTI</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>25%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>TLT</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>25%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>GLD</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>25%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>SHY</td>
+        </tr>
+      </table>
+      </div>
+      
+                                                          <div>
+                                                          <p>*全天候投資策略(All Weather Portfolio):</p>
+      <table border="1" class="inlineTable">
+        <tr>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Weight </th>
+          <td style="background-color: rgb(154, 236, 202)" align='center'> Underlying Asset </th>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>30%</td>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>VTI</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>40%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>TLT</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>15%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>IEF</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>7.5%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>GLD</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(81, 228, 167)" align='center'>7.5%</td>
+          <td style="background-color: rgb(81, 228, 167)"" align='center'>DBC</td>
+        </tr>
+      </table>
+                                                          </div>
+                                                     
+    </div>
+      
+  
+      <form method="post">    
+        {% csrf_token %}  <!--避免跨站的請求攻擊-->  
+        {{ form.as_p }}   <!--Form rendering options: as_p、as_table、as_ul-->
+        <button type="submit">SUBMIT</button>  
+      </form>   
+      <hr>
+    
+   
+    {{ MyText}}
+   
+    </div>
