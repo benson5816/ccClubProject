@@ -1,0 +1,82 @@
+<body style="background-color:#DBF9FC;">
+<div class='container'>  
+    <h1>ccClub 讀書會專題: 資產配置讓你更快達成財務自由</h1>  
+    <p>This portfolio backtesting tool allows you to construct one or more portfolios based on the selected mutual funds, ETFs, and stocks. You can analyze and backtest portfolio returns, risk characteristics, style exposures, and drawdowns. The results cover both returns and fund fundamentals based portfolio style analysis along with risk and return decomposition by each portfolio asset. You can compare up to three different portfolios against the selected benchmark, and you can also specify any periodic contribution or withdrawal cashflows and the preferred portfolio rebalancing strategy.</p>
+    <p>The related asset class level portfolio modeling tool allows you to analyze and compare asset class level portfolios with a longer time horizon starting from 1972.</p>
+    <p>*巴菲特退休策略(Warren Buffett Retirement Plan):</p>
+    <table border="1">
+      <tr>
+        <td align='center'> Weight </th>
+        <td align='center'> Underlying Asset </th>
+      </tr>
+      <tr>
+        <td align='center'>90%</td>
+        <td style="background-color: rgb(115, 255, 0)" align='center'>SPY</td>
+      </tr>
+      <tr>
+        <td align='center'>10%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>TLT</td>
+      </tr>
+    </table>
+    <p>*永續投資策略(Permanent Portfolio):</p>
+    <table border="1">
+      <tr>
+        <td align='center'> Weight </th>
+        <td align='center'> Underlying Asset </th>
+      </tr>
+      <tr>
+        <td align='center'>25%</td>
+        <td style="background-color: rgb(115, 255, 0)" align='center'>VTI</td>
+      </tr>
+      <tr>
+        <td align='center'>25%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>TLT</td>
+      </tr>
+      <tr>
+        <td align='center'>25%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>GLD</td>
+      </tr>
+      <tr>
+        <td align='center'>25%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>SHY</td>
+      </tr>
+    </table>
+    <p>*全天候投資策略(All Weather Portfolio):</p>
+    <table border="1">
+      <tr>
+        <td align='center'> Weight </th>
+        <td align='center'> Underlying Asset </th>
+      </tr>
+      <tr>
+        <td align='center'>30%</td>
+        <td style="background-color: rgb(115, 255, 0)" align='center'>VTI</td>
+      </tr>
+      <tr>
+        <td align='center'>40%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>TLT</td>
+      </tr>
+      <tr>
+        <td align='center'>15%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>IEF</td>
+      </tr>
+      <tr>
+        <td align='center'>7.5%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>GLD</td>
+      </tr>
+      <tr>
+        <td align='center'>7.5%</td>
+        <td style="background-color: rgb(115, 255, 0)"" align='center'>DBC</td>
+      </tr>
+    </table>
+
+    <form method="post">    
+      {% csrf_token %}  <!--避免跨站的請求攻擊-->  
+      {{ form.as_p }}   <!--Form rendering options: as_p、as_table、as_ul-->
+      <button type="submit">SUBMIT</button>  
+    </form>   
+    <hr>
+  
+ 
+  {{ MyText}}
+ 
+  </div>
