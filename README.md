@@ -1,5 +1,5 @@
 # ccClubProject
-The Project of ccClub (2022 fall)
+The Project of ccClub (2022 fall)\
 ccClub 2022 Fall Python 讀書會 Proposal 
 主題： 資產配置讓你更快達成財務自由
 組員: 張倬瑜 陳乙豪 謝季霖 蔡恒杰
